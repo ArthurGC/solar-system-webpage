@@ -7,7 +7,7 @@
 }
 body{
     background: #000;
-    overflow-y: hidden;
+    overflow-y: auto;
 }
 a{
     text-decoration: none;
@@ -62,9 +62,11 @@ video{
     object-fit: cover;
 }
 .content{
+    margin: 0 auto;
     width: 60%;
-    padding-top: 300px;
-    padding-left: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 88vh;
     color: #fff;
 }
@@ -117,4 +119,34 @@ i{
 }
 button:hover{
     background: #aaa;
+}
+
+@media (max-width: 1100px){
+    .content{
+        padding: 0 4rem;
+        text-align: center;
+        width: 100%;
+    }
+    h1{
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+    p{
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+    .header{
+        justify-content: space-around;
+
+    }
+    .logo{
+        margin-left: 5%;
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #fff;
+    }
+    .header_list{
+        margin-right: 5%;
+    }
 }
