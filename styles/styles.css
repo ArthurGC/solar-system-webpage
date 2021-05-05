@@ -91,22 +91,7 @@ p{
     font-size: 2rem;
     line-height: 1.5;
 }
-.icons{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 70px;
-    height: 230px;
-    text-align: center;
-}
-.container_icon{
-    background: #fff;
-    border-radius: 5px;
-    margin: 10px 0;
-}
-.container_icon:hover{
-    background: #aaa;
-}
+
 i{
     font-size: 4rem;
 }
@@ -130,13 +115,13 @@ button:hover{
 
 @media (max-width: 1100px){
     .content{
-        padding: 0 4rem;
+        padding: 0 2rem;
         text-align: center;
         width: 100%;
     }
     h1{
         font-size: 4rem;
-        margin-bottom: 1rem;
+        margin-bottom: .5rem;
     }
     p{
         font-size: 1.5rem;
@@ -155,5 +140,25 @@ button:hover{
     }
     .header_list{
         margin-right: 5%;
+    }
+}
+
+@media (max-width: 600px){
+    .logo,
+    .header_item{
+        font-size: 60%;
+    }
+    .header{
+        padding: 1rem 0;
+    }
+    
+    i{
+        font-size: 2rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1rem;
     }
 }
